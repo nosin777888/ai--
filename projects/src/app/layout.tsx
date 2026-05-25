@@ -2,14 +2,6 @@ import type { Metadata } from 'next';
 import { Inspector } from 'react-dev-inspector';
 import './globals.css';
 
-// 引入儿童友好字体
-const fontLink = (
-  <link
-    href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap"
-    rel="stylesheet"
-  />
-);
-
 export const metadata: Metadata = {
   // ---- 网页标题 ----
   // default: 直接访问首页时显示的标题
@@ -96,9 +88,6 @@ export default function RootLayout({
 
   return (
     <html lang="zh-CN">
-      <head>
-        {fontLink}
-      </head>
       <body className="antialiased bg-[#FFF8F0]">
         {isDev && <Inspector />}
         {children}
