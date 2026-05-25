@@ -156,10 +156,11 @@ export default function StorybookGenerator() {
           <button
             onClick={handleGenerate}             // 点击时触发生成
             disabled={isLoading || !theme.trim()}  // 加载中或没输入时禁用
-            className="px-7 py-3 rounded-xl bg-[#E8845C] text-white text-lg font-medium
-                       hover:bg-[#D4734A] active:scale-95
+            className="px-7 py-3 rounded-xl bg-purple-300 text-white text-lg font-medium
+                       hover:bg-purple-400 active:scale-95
                        disabled:opacity-50 disabled:cursor-not-allowed
                        transition-all cursor-pointer"
+            style={{ fontFamily: "'Fredoka One', cursive, 'Comic Sans MS', sans-serif" }}
           >
             {isLoading ? "生成中..." : "生成绘本"}
           </button>
