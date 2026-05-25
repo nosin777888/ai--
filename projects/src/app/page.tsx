@@ -125,7 +125,7 @@ export default function StorybookGenerator() {
       {/* ===== 顶部标题区 ===== */}
       <header className="text-center mb-8">
         <h1
-          className="text-4xl md:text-5xl text-purple-600 mb-3"
+          className="text-4xl md:text-5xl text-[#3D2B1F] mb-3"
           style={{ fontFamily: "'ZCOOL XiaoWei', serif" }}
         >
           AI 绘本生成器
